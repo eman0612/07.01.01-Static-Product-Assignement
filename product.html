@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product</title>
+  </head>
+  <body>
+    <header>
+      <h1>LUKE STK</h1>
+      <nav class="breadcrumb">
+        <a href="season.html">back to Seasons</a>
+      </nav>
+    </header>
+    <main class="seasonProd-container">
+      <img
+        class="seasonProd-image"
+        src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp"
+        alt="Season wear - Random name"
+      />
+      <section class="seasonProd-info">
+        <h3>Season wear - Random name</h3>
+        <p>Season wear list</p>
+        <h4 class="price">Price</h4>
+        <form>
+          <select name="size" id="size">
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+          <div
+            class="valueButton"
+            id="decrease"
+            onclick="decreaseValue()"
+            value="Decrease Value"
+          >
+            -
+          </div>
+          <input type="number" id="number" min="1" value="1" />
+          <div
+            class="valueButton"
+            id="increase"
+            onclick="increaseValue()"
+            value="Increase Value"
+          >
+            +
+          </div>
+          <button class="button">Add to cart</button>
+        </form>
+      </section>
+      <!-- <section>
+        <h2>Product Information</h2>
+         <dl>
+          <dt>Model name</dt>
+          <dd>Season wear - Random name</dd>
+          <dt>Color</dt>
+          <dd>Color1111</dd>
+          <dt>Inventory number</dt>
+          <dd>1163</dd>
+        </dl> 
+        <h1>Season wear list</h1>
+        <p>Season wear - Random name</p>
+      </section> -->
+    </main>
+
+    <script src="product.js"></script>
+  </body>
+</html>
